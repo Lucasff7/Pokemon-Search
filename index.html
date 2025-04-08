@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokémon Search App</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Pokemon Search</h1>
-      <div class="container">
-        <form role="search" id="search-form">
-          <label for="search-input">Search for Pokémon Name or ID:</label>
-          <input type="text" name="pokemon" id="search-input" required />
-          <button id="search-button">Search</button>
-        </form>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pokedex">
+    <div class="screen">
+      <h1>Pokédex</h1>
+      <div class="search">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="Enter Pokémon name or ID" required>
+          <button id="search-button" type="submit">🔍</button>
         </form>
       </div>
-    </main>
-  </body>
+      <div id="pokemon-img"></div>
+      <div class="info">
+        <h2 id="pokemon-name">Name</h2>
+        <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
+        <p><strong>Weight:</strong> <span id="weight"></span></p>
+        <p><strong>Height:</strong> <span id="height"></span></p>
+        <p><strong>Types:</strong> <span id="types"></span></p>
+        <h3>Stats</h3>
+        <p>❤️ HP: <span id="hp"></span></p>
+        <p>⚔️ Attack: <span id="attack"></span></p>
+        <p>🛡️ Defense: <span id="defense"></span></p>
+        <p>✨ Sp. Attack: <span id="special-attack"></span></p>
+        <p>🧱 Sp. Defense: <span id="special-defense"></span></p>
+        <p>💨 Speed: <span id="speed"></span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
